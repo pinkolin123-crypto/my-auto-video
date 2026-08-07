@@ -21,7 +21,8 @@ if st.button("🚀 မြန်မာလို Movie Recap စတင်ဖန်
   else:
     try:
       genai.configure(api_key=api_key)
-      model = genai.GenerativeModel("gemini-2.0-flash")
+      model = genai.GenerativeModel("gemini-1.5-flash-8b")
+
 
       prompt = f"ရုပ်ရှင်အမည် '{movie_title}' အတွက် စိတ်ဝင်စားစရာကောင်းသော, လူကြိုက်များသော ဇာတ်လမ်းအနှစ်ချုပ် (Movie Recap) တစ်ခုကို မြန်မာဘာသာဖြင့် အသေးစိတ် ရေးသားပေးပါ။"
 
